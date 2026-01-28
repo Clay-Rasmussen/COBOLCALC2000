@@ -33,7 +33,7 @@ ___
 ___
 <img src="https://github.com/Clay-Rasmussen.png" alt="Profile Picture" width="100" />
 
-**Clay Rasmussen & Breckin Lukehart**
+**Clay Rasmussen**
 * **Clay's GitHub Profile**: [Clay-Rasmussen](https://github.com/Clay-Rasmussen)
 ___
 * **Clay's Email**: [ClRasm02@wsc.edu](mailto:clrasm02@wsc.edu)
