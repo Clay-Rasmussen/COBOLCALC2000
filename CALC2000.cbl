@@ -1,6 +1,12 @@
        identification division.
 
        program-id. calc2000.
+      *  Programmer.: Clay Rasmussen
+      *  Date.......: 01.27.2026
+      *  Github URL.:
+      *  https://github.com/Clay-Rasmussen/COBOLCALC2000
+      *  Description: This program calculates future values for an
+      *  investment and doubles the investment ammount twice.
 
        environment division.
 
@@ -12,12 +18,12 @@
 
        working-storage section.
 
-       01  user-entries.
+       01  input-values.
 
            05  number-entered              pic 9        value 1.
-           05  investment-amount           pic 99999.
-           05  number-of-years             pic 99.
-           05  yearly-interest-rate        pic 99v9.
+           05  investment-amount           pic 99999    value 1000.
+           05  number-of-years             pic 99       value 10.
+           05  yearly-interest-rate        pic 99v9     value 5.5.
 
        01  work-fields.
 
