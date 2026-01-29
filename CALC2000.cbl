@@ -34,6 +34,12 @@
 
        procedure division.
 
+      *  In this paragraph we do the heavy lifting of the calculations.
+      *  We display the opening to the program, add some space,
+      *  and perform the future calculation value. Then the investment
+      *  amount doubles and the process happens two more times. The 
+      *  paragraph ends after the 3 value calculations displays the 
+      *  end of the report, then stops running.
        000-calculate-future-values.
            display "Calculating Future Values".
            display space.
@@ -47,6 +53,12 @@
            display "End of Calculations".
            stop run.
 
+      *  In this paragraph we start by moving the investment-amount to
+      *  the future value and moving 1 into the year-counter. Next,
+      *  the program performs the 120 paragraph until the year-counter
+      *  is greater than the number of years we desire. Finally, the 
+      *  paragraph ends by perfoming the 140 paragraph to display
+      *  the values.
        100-calculate-future-value.
            move investment-amount to future-value
            move 1 to year-counter
@@ -54,12 +66,21 @@
                until year-counter > number-of-years
            perform 140-display-values.
 
+      *  In this paragraph we compute the next-fv in a rounded value,
+      *  and we do the math to multiply the future-value and the 
+      *  yearly interest rate then divide them by one hundred. This 
+      *  paragraph finishes by adding 1 to the year counter.
        120-calculate-next-fv.
            compute future-value rounded =
                future-value +
                    (future-value * yearly-interest-rate / 100).
            add 1 to year-counter.
 
+      *  This paragraph does the heavy lifting of the output. We start
+      *  by moving all of out working values to edited working values
+      *  so we can display them neatly. The paragraph then displays all
+      *  of the information needed for the outputs of the three 
+      *  different computations.
        140-display-values.
            move future-value to edited-decimal-value.
            move investment-amount to edited-whole-value.
