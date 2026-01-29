@@ -29,11 +29,14 @@
 
            05 edited-whole-value           pic zz,zzz,zz9.
            05 edited-decimal-value         pic zzz,zzz.99.
+           05 edited-interest-rate         pic zzz,zzz9.9.
+           05 edited-number-of-years       pic zzz,zzz,zz.
 
        procedure division.
 
        000-calculate-future-values.
            display "Calculating Future Values".
+           display space.
            perform 100-calculate-future-value.
            compute investment-amount =
               investment-amount * 2
@@ -41,8 +44,8 @@
            compute investment-amount =
                investment-amount * 2
             perform 100-calculate-future-value
-           display space.
-           display "End of Calculations:)".
+           display "End of Calculations".
+           stop run.
 
        100-calculate-future-value.
            move investment-amount to future-value
@@ -59,10 +62,12 @@
 
        140-display-values.
            move future-value to edited-decimal-value.
-           move investment-amount to edited-whole-value
-           display space.
+           move investment-amount to edited-whole-value.
+           move yearly-interest-rate to edited-interest-rate.
+           move number-of-years  to edited-number-of-years.
            display "Investment Amount : " edited-whole-value
-           display "Number of Years   : " number-of-years
-           display "Yearly Interest   : " yearly-interest-rate 
-           display "Future Value      : " edited-decimal-value 
+           display "Number of Years   : " edited-number-of-years
+           display "Yearly Interest   : " edited-interest-rate
+           display "Future Value      : " edited-decimal-value
+           display "-------------------------------".
            display space.
