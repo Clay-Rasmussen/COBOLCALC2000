@@ -9,6 +9,7 @@ This COBOl program calculates future values for an investment, an doubles the in
 ___
 * [Tech Stack](#tech-stack)
 * [Installation](#installation)
+* [Running Output](#running-output)
 * [Help](#help)
 * [Authors](#authors)
 
@@ -22,6 +23,9 @@ ___
 ___
 1. Clone the repository to your local machine. (or just steal my code)
 2. Put the code into VS Code in your mainframe of choice
+
+## Running Output
+___
 
 ## Help
 ___
