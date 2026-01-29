@@ -26,6 +26,7 @@ ___
 
 ## Running Output
 ___
+![Program Output](assets/CALC2000_Output.png)
 
 ## Help
 ___
