@@ -7,11 +7,22 @@ This COBOl program calculates future values for an investment, an doubles the in
 
 ## Table of Contents
 ___
+* [New Concepts](#new-concepts)
 * [Tech Stack](#tech-stack)
 * [Installation](#installation)
 * [Running Output](#running-output)
+* [Learning Outcomes](#learning-outcomes)
 * [Help](#help)
 * [Authors](#authors)
+
+## New Concepts
+___
+* Basic COBOL program structure (IDENTIFICATION, DATA, and PROCEDURE divisions)
+* Working with numeric data types and variables
+* Performing arithmetic operations (multiplication for investment growth)
+* Using sequential calculations to update values step-by-step
+* Output formatting using DISPLAY statements
+* Understanding how legacy languages handle financial calculations
 
 ## Tech Stack
 ___
@@ -27,6 +38,15 @@ ___
 ## Running Output
 ___
 ![Program Output](assets/CALC2000_Output.png)
+
+## Learning Outcomes
+___
+* Understand the foundational structure of a COBOL program
+* Apply arithmetic operations to solve real-world financial problems
+* Trace and debug sequential logic in a procedural language
+* Gain exposure to legacy systems still used in banking and enterprise environments
+* Develop confidence working outside languages like C++ or Java
+* Recognize how simple programs model compound-style growth through repeated operations
 
 ## Help
 ___
